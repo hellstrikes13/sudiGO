@@ -2,21 +2,23 @@ mentor: sathish vj + github
 http://golangtraining.in
 http://learngobyexample.com
 
-1)to make GO binary
-#go build -o <filename.go>
+### to make GO binary
 will result executable filename
+#go build -o <filename.go>  
 if -o and filename is omitted it shall take by default the underlying Directory name
 
-2) to cross compile in GO
-change the env var GOOS
-#go env
-export GOOS=linux // i m making binary for linux machine on my Mac
-go build -o <filename.go>
-#file filename.go // shall result in Linux type binary
-Similary way can be done done on windows
-#go tool dist list // will display the supported OS platforms by GO..
+### to cross compile in GO
+change the env var GOOS<br>
+#go env<br>
+ i m making binary for linux machine on my Mac<br>
+#export GOOS=linux <br>
+#go build -o <filename.go>
+  shall result in Linux type binary<br>
+#file filename.go<br>
+
+#go tool dist list // will display the supported OS platforms by GO..<br>
 
 
-3)to invoke HELP on GO and open browser hit http://localhost:6000
+### to invoke HELP on GO and open browser hit http://localhost:6000
 #godoc -http=localhost:6060
 
